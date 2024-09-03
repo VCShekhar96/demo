@@ -1,0 +1,33 @@
+git version 2.46.0.windows.1
+PS C:\Users\ADMIN\Desktop\git> echo "# demo" >> README.md
+PS C:\Users\ADMIN\Desktop\git> git init
+Initialized empty Git repository in C:/Users/ADMIN/Desktop/git/.git/
+PS C:\Users\ADMIN\Desktop\git> git add README.md
+PS C:\Users\ADMIN\Desktop\git> git commit -m "first commit"
+[master (root-commit) eeb20e6] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+t
+PS C:\Users\ADMIN\Desktop\git> git push -u origin main
+info: please complete authentication in your browser...
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/VCShekhar96/demo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\ADMIN\Desktop\git> git add .
+PS C:\Users\ADMIN\Desktop\git> git commit -m "adding html file"
+[main cbd3326] adding html file
+ 1 file changed, 14 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\ADMIN\Desktop\git> git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 445.00 KiB/s, done.      
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)     
+To https://github.com/VCShekhar96/demo.git
+   eeb20e6..cbd3326  main -> main
+branch 'main' set up to track 'origin/main'.
