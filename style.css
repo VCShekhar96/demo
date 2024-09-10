@@ -35,12 +35,43 @@ section {
     margin-bottom: 2rem;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+.shape-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.shape {
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin: 1rem;
+}
+
+.cube, .sphere, .cylinder, .cone {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cube {
+    background-color: #4CAF50;
+    transform: rotateX(45deg) rotateY(45deg);
+}
+
+.sphere {
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+.cylinder {
+    background-color: #FF5722;
+    border-radius: 50% / 10%;
+}
+
+.cone {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #FFC107;
 }
