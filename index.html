@@ -3,12 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My 3D Shapes Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        .shape-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .shape {
+            text-align: center;
+            margin: 1rem;
+        }
+        .cube, .sphere, .cylinder, .cone {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .cube {
+            background-color: #4CAF50;
+            transform: rotateX(45deg) rotateY(45deg);
+        }
+        .sphere {
+            background-color: #2196F3;
+            border-radius: 50%;
+        }
+        .cylinder {
+            background-color: #FF5722;
+            border-radius: 50% / 10%;
+        }
+        .cone {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #FFC107;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
+    <header>
+        <h1>Welcome to My 3D Shapes Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shapes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This website showcases various 3D shapes and their properties.</p>
+        </section>
+        <section>
+            <h2>3D Shapes</h2>
+            <div class="shape-container">
+                <div class="shape">
+                    <div class="cube"></div>
+                    <p>Cube</p>
+                </div>
+                <div class="shape">
+                    <div class="sphere"></div>
+                    <p>Sphere</p>
+                </div>
+                <div class="shape">
+                    <div class="cylinder"></div>
+                    <p>Cylinder</p>
+                </div>
+                <div class="shape">
+                    <div class="cone"></div>
+                    <p>Cone</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My 3D Shapes Website</p>
+    </footer>
 </body>
 </html>
